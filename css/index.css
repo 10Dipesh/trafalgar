@@ -1,0 +1,5 @@
+@import url(./vairables.css);
+
+.test {
+  color: var(--red);
+}
