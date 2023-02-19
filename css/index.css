@@ -1,5 +1,13 @@
 @import url(./vairables.css);
+@import url(./reset.css);
+@import url(./nav.css);
+@import url(./utils.css);
 
-.test {
-  color: var(--red);
+* {
+  font-family: "Mulish", sans-serif;
+}
+
+.main__container {
+  width: min(87%, 1200px);
+  margin: auto;
 }

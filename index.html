@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Tr</title>
-</head>
-<body>
-    <div class="test">
-        Hello World!
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Noob number 1</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <header class="margin-t-1">
+        <div class="nav">
+          <div class="logo__container">
+            <img src="./public/images/logo.svg" alt="logo" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#" class="active">Home</a>
+              </li>
+              <li>
+                <a href="#">Find a Doctor</a>
+              </li>
+              <li>
+                <a href="#">Apps</a>
+              </li>
+              <li>
+                <a href="#">Testimonials</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
+          <div class="mobile__menu hide" id="mobileMenu">
+            <div class="cross__icon">
+              <i class="fa-sharp fa-solid fa-xmark fa-2xl" id="closeButton"></i>
+            </div>
+            <div class="nav-items flex-center">
+              <ul>
+                <li>
+                  <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                  <a href="#">Find a Doctor</a>
+                </li>
+                <li>
+                  <a href="#">Apps</a>
+                </li>
+                <li>
+                  <a href="#">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="hero__section">
+        <h1>Virtual Healthcare For you</h1>
+        <p>
+          Tafalagr provides progressive, and affortable healthcare, acessible on
+          mobile and online for everyone.
+        </p>
+        <button type="button" id="consultBtn">Consult now</button>
+      </section>
     </div>
-
+    <footer></footer>
     <script src="./js/index.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/5b82ef0fba.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

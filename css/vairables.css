@@ -1,4 +1,8 @@
 :root{
  /* Colors */
- --red: red
+ --primary-100: #67C3F3;
+ --primary--background: #F5F5F5;
+ --black-100: rgba(31, 21, 52, 0.5);
+ --black-200: #1F1534;
+ 
 }
