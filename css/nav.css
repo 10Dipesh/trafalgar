@@ -4,9 +4,6 @@
   align-items: center;
 }
 
-.logo__container {
-}
-
 .hamburger {
   cursor: pointer;
   display: flex;

@@ -2,12 +2,15 @@
 @import url(./reset.css);
 @import url(./nav.css);
 @import url(./utils.css);
+@import url(./hero-section.css);
 
 * {
   font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
 }
 
 .main__container {
+  background-color: var(--primary--background);
   width: min(87%, 1200px);
   margin: auto;
 }

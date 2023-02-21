@@ -1,8 +1,9 @@
-:root{
- /* Colors */
- --primary-100: #67C3F3;
- --primary--background: #F5F5F5;
- --black-100: rgba(31, 21, 52, 0.5);
- --black-200: #1F1534;
- 
+:root {
+  /* Colors */
+  --primary-100: #67c3f3;
+  --primary--background: #f5f5f5;
+  --black-100: rgba(31, 21, 52, 0.5);
+  --black-200: #1f1534;
+  --secondary-200: #458ff6;
+    font-size: 10px;
 }
