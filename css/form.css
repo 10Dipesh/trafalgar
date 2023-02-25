@@ -1,0 +1,55 @@
+.form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form__content p {
+  text-align: start;
+  margin: 2rem 2rem 0.5rem 0;
+  font: 18px;
+}
+
+.form__content input {
+  height: 30px;
+  width: 300px;
+  border-radius: 3px;
+}
+
+.message input {
+  height: 150px;
+}
+
+#sendBtn {
+  margin-top: 2.4rem;
+  padding: 10px 40px;
+}
+
+@media screen and (min-width: 1000px) {
+  .personal-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .personal-info input {
+    width: 309px;
+    height: 45px;
+  }
+
+  .form__content p {
+    text-align: start;
+  }
+
+  .email input {
+    width: 650px;
+    height: 45px;
+  }
+  .message input {
+    width: 650px;
+    height: 202px;
+    
+  }
+}

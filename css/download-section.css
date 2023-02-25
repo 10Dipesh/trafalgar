@@ -1,0 +1,52 @@
+.download__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .download__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .download__section {
+        flex-direction: row-reverse;
+        margin-top: 87px;
+      }
+    
+      .download__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 6rem;
+      }
+    
+      .download__content h1 {
+        text-align: start;
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+      }
+    
+      .download__content p {
+        text-align: left;
+        font-size: 2.1rem;
+        line-height: 3.2rem;
+        margin-top: 2.5rem;
+      }
+    
+      #downloadBtn {
+        margin-top: 4.7rem;
+      }
+    
+      .download-image {
+        width: 693px;
+        height: 598px;
+      }
+
+    
+  }

@@ -1,0 +1,52 @@
+.info__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .info__section {
+        flex-direction: row;
+        margin-top: 87px;
+      }
+    
+      .info__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 6rem;
+      }
+    
+      .info__content h1 {
+        text-align: start;
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+      }
+    
+      .info__content p {
+        text-align: left;
+        font-size: 2.1rem;
+        line-height: 3.2rem;
+        margin-top: 2.5rem;
+      }
+    
+      #learnBtn {
+        margin-top: 4.7rem;
+      }
+    
+      .info-image {
+        width: 693px;
+        height: 598px;
+      }
+
+    
+  }

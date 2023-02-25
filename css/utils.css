@@ -3,6 +3,9 @@
   justify-content: center;
   align-items: center;
 }
+.flex-direction-column {
+  flex-direction: column;
+}
 
 .hide {
   display: none;
@@ -20,4 +23,56 @@
 
 .margin-t-1{
   margin-top: 1rem;
+}
+
+.section {
+  margin: 8rem 0;
+}
+
+.line {
+  padding: 1.8px 25px;
+  border-radius: 2px;
+  margin: 2rem 0 2rem 0;
+}
+
+.line--dark{
+  background-color: black;
+}
+
+.line--white{
+  background-color: white;
+}
+
+.image{
+  width: 85vw;
+  height: 50vh;
+  margin-top: 1.5rem;
+
+}
+
+.button{
+  color: var(--secondary-200);
+  font-size: 2rem;
+  padding: 0.8em 2.8em;
+  border: 2px solid var(--secondary-200);
+  border-radius: 2rem;
+  background-color: var(--primary-background);
+}
+
+
+.topic{
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--black-200);
+}
+
+
+.info{
+  color: var(--black-100);
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  line-height: 2.5rem;
+  
 }

@@ -1,0 +1,135 @@
+.carousel{
+ color: var(--primary--background)
+}
+
+.carousel__container {
+  background: var(--blue-gradient);
+  border-radius: 1.2rem;
+  height: 50rem;
+  padding: 3rem 10%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.carousel__container h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.testimonial{
+  width: 100%;
+}
+
+.testimonial, .customer {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.customer__photo_container {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-image: url("https://th.bing.com/th/id/OIP.O3VDrDNCrSZISINpOCp4BQHaKX?pid=ImgDet&w=500&h=700&rs=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.5rem solid var(--primary--background);
+}
+
+.customer__name {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.testimonials{
+  display: grid;
+}
+
+.testimonial {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.testimonial.show {
+  opacity: 1;
+}
+
+#prevBtn img {
+  transform: rotate(180deg);
+}
+
+.controls button {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+
+.controls img {
+  width: 3rem;
+}
+
+.controls {
+  margin-top: 2rem;
+  gap:2rem
+}
+
+.dots {
+  gap: 1.5rem;
+}
+
+.dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.dot.active {
+  background-color: green;
+}
+@media screen and (min-width: 1000px) {
+  .carousel__container {
+    padding: 5rem 15%;
+    justify-content: flex-start;
+    gap:3rem;
+    height: 40rem;
+  }
+
+  .carousel__container h1 {
+    font-size: 3.8rem;
+  }
+
+  .testimonial {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .customer {
+    text-align: left;
+    flex-direction: row;
+  }
+  
+  .customer__name {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  .customer_title {
+    font-size: 2rem;
+  }
+
+  .testimonial__text {
+    font-size: 2rem;
+    width:50%;
+  }
+
+  .customer__photo_container {
+    width: 14rem;
+    height: 14rem;
+  }
+}
