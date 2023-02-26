@@ -308,7 +308,7 @@
             </div>
             <div class="message">
               <p>Your Message</p>
-              <input type="text" />
+              <textarea class="msg-field"></textarea>
             </div>
           </div>
           <button class="send button" id="sendBtn" type="button">
@@ -316,14 +316,58 @@
           </button>
         </section>
         <!-- form section ends -->
+        <div class="scroll-to-top flex-center">
+          <img src="./public/images/uparrow.svg" alt="" />
+        </div>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <div class="footer__container">
+        <div class="logo__section flex-center flex-direction-column">
+          <div class="footer__logo flex-center">
+            <div class="t__logo">
+              <p>T</p>
+            </div>
+            <p>Tafalagr</p>
+          </div>
+          <p>
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone
+          </p>
+          <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+        </div>
+
+        <div class="footer__detail">
+          <div class="company">
+            <h2>Company</h2>
+            <p>About</p>
+            <p>Testimonials</p>
+            <p>Find a doctor</p>
+            <p>Apps</p>
+          </div>
+          <div class="region">
+            <h2>Region</h2>
+            <p>Indonesia</p>
+            <p>Singapore</p>
+            <p>Hongkong</p>
+            <p>Canada</p>
+          </div>
+          <div class="help">
+            <h2>Help</h2>
+            <p>Help center</p>
+            <p>Contact support</p>
+            <p>Instructions</p>
+            <p>How it works</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/index.js"></script>
     <script src="./js/carousel.js"></script>
     <script
       src="https://kit.fontawesome.com/5b82ef0fba.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/scrollToTop.js"></script>
   </body>
 </html>

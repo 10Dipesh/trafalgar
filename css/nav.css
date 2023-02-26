@@ -20,6 +20,7 @@
   top: 0;
   left: 0;
   padding: 1rem;
+  transition: all 1000ms;
 }
 
 .mobile__menu li {
@@ -48,9 +49,10 @@
 
 .cross__icon {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem 4rem 0 0;
+  
 }
 
 .cross__icon i {

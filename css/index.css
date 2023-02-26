@@ -9,6 +9,7 @@
 @import url(./carousel-section.css);
 @import url(./article-section.css);
 @import url(./form.css);
+@import url(./footer.css);
 
 * {
   font-family: "Mulish", sans-serif;
@@ -19,4 +20,30 @@
   background-color: var(--primary--background);
   width: min(87%, 1200px);
   margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+  height: 7.3rem;
+  width: 7.6rem;
+  padding: 1rem;
+  background-color: #5a98f2;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 70px;
+  right: 60px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.scroll-to-top img {
+  margin-bottom: 0.4rem;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
 }

@@ -1,5 +1,5 @@
-.carousel{
- color: var(--primary--background)
+.carousel {
+  color: var(--primary--background);
 }
 
 .carousel__container {
@@ -18,11 +18,12 @@
   font-size: 3rem;
 }
 
-.testimonial{
+.testimonial {
   width: 100%;
 }
 
-.testimonial, .customer {
+.testimonial,
+.customer {
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -43,7 +44,7 @@
   font-size: 2rem;
 }
 
-.testimonials{
+.testimonials {
   display: grid;
 }
 
@@ -74,7 +75,7 @@
 
 .controls {
   margin-top: 2rem;
-  gap:2rem
+  gap: 2rem;
 }
 
 .dots {
@@ -85,17 +86,20 @@
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  background-color: red;
+  background-color: var(--secondary-200);
+  opacity: 0.3;
 }
 
 .dot.active {
-  background-color: green;
+  background-color: var(--secondary-200);
+  opacity: 100;
 }
+
 @media screen and (min-width: 1000px) {
   .carousel__container {
     padding: 5rem 15%;
     justify-content: flex-start;
-    gap:3rem;
+    gap: 3rem;
     height: 40rem;
   }
 
@@ -108,12 +112,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .customer {
     text-align: left;
     flex-direction: row;
   }
-  
+
   .customer__name {
     font-weight: bold;
     font-size: 2.5rem;
@@ -125,7 +129,7 @@
 
   .testimonial__text {
     font-size: 2rem;
-    width:50%;
+    width: 50%;
   }
 
   .customer__photo_container {

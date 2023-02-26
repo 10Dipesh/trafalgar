@@ -12,10 +12,10 @@
   opacity: 0;
 }
 
-.show {
+/* .show {
   display: block;
   opacity: 1;
-}
+} */
 
 .padding-y-xl{
   padding: 0 min(4rem,5vw);

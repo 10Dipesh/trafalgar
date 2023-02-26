@@ -4,7 +4,9 @@
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  position: relative;
 }
+
 
 .service__section h1 {
   font-size: 3rem;
