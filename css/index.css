@@ -19,7 +19,9 @@
 .main__container {
   background-color: var(--primary--background);
   width: min(87%, 1200px);
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 html {
@@ -38,6 +40,7 @@ html {
   cursor: pointer;
   opacity: 0;
   transition: opacity 1000ms;
+  z-index: 100;
 }
 
 .scroll-to-top img {
