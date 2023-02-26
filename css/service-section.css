@@ -6,10 +6,6 @@
   position: relative;
 }
 
-.blob {
-  display: none;
-}
-
 .service__section h1 {
   font-size: 3rem;
   line-height: 2rem;
@@ -67,13 +63,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .blob {
-    position: absolute;
+  .service__section .blob {
     top: 15rem;
     left: 0;
-    z-index: 9;
-    height: 90rem;
-    width: 90rem;
-    display: block;
   }
 }

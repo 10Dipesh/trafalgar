@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12rem;
+  margin-bottom: 10rem;
 }
 
 .download__content {
@@ -16,6 +16,7 @@
 @media screen and (min-width: 1000px) {
   .download__section {
     flex-direction: row-reverse;
+    margin-bottom: 16rem;
   }
 
   .download__content {

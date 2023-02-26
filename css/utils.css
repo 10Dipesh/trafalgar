@@ -73,8 +73,25 @@
   line-height: 2.5rem;
 }
 
+.blob{
+ display: none;
+}
+
 @media screen and (min-width: 1000px) {
   .image {
     width: 65rem;
+  }
+
+  .section {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .blob{
+    z-index: 9;
+    height: 90rem;
+    width: 90rem;
+    display: block;
+    position: absolute;
   }
 }
