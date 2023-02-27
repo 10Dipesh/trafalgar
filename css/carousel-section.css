@@ -83,11 +83,12 @@
 }
 
 .dot {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.9rem;
+  height: 0.9rem;
   border-radius: 50%;
   background-color: var(--secondary-200);
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .dot.active {

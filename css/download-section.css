@@ -13,6 +13,19 @@
   justify-content: center;
 }
 
+#downloadBtn {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#downloadBtn:hover {
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  transform: scale(1.03);
+  background-color: var(--secondary-200);
+  color: var(--primary--background);
+}
+
 @media screen and (min-width: 1000px) {
   .download__section {
     flex-direction: row-reverse;

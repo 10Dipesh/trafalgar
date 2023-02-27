@@ -10,6 +10,12 @@
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   gap: 1.2rem;
   z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+.article__items:hover {
+  cursor: pointer;
+  transform: scale(1.09);
 }
 
 .article__img1 {
@@ -69,6 +75,16 @@
 
 #viewBtn {
   margin-top: 7.1rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#viewBtn:hover {
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+  -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+transform: scale(1.03);
+background-color: var(--secondary-200);
+color: var(--primary--background);
 }
 
 @media screen and (min-width: 1000px) {

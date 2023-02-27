@@ -40,6 +40,12 @@
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   background-color: var(--primary--background);
   z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+.services__items:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .services__items img {

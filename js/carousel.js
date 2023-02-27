@@ -48,6 +48,40 @@ const setTestimonial = ({
   $profilePictureContainer.style.backgroundImage = `url(${profileImageUrl})`;
 };
 
+const createControlDots = () => {
+  testimonials.forEach((_, index) => {
+    const dot = document.createElement("div");
+    
+    if (index === currentTestimonialIndex) dot.classList.add("active");
+    dot.classList.add("dot");
+    $dotsContainer.appendChild(dot);
+  });
+};
+
+const setAciveControlDot = () => {
+  const dots = document.querySelectorAll(".dot");
+  
+  dots.forEach((dot, index) => {
+    if (index === currentTestimonialIndex) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+};
+
+const onDotClick = (index) => {
+  currentTestimonialIndex = index;
+
+  $testimonial.classList.remove("show");
+  setAciveControlDot();
+
+  setTimeout(() => {
+    setTestimonial(testimonials[currentTestimonialIndex]);
+    $testimonial.classList.add("show");
+  }, 1000);
+}
+
 const onCarouselButtonClick = (type) => {
   if (type !== "next" && type !== "prev") return;
 
@@ -73,29 +107,13 @@ const onCarouselButtonClick = (type) => {
   }, 1000);
 };
 
-const createControlDots = () => {
-  testimonials.forEach((_, index) => {
-    const dot = document.createElement("div");
-
-    if (index === currentTestimonialIndex) dot.classList.add("active");
-    dot.classList.add("dot");
-    $dotsContainer.appendChild(dot);
-  });
-};
-
-const setAciveControlDot = () => {
-  const dots = document.querySelectorAll(".dot");
-
-  dots.forEach((dot, index) => {
-    if (index === currentTestimonialIndex) {
-      dot.classList.add("active");
-    } else {
-      dot.classList.remove("active");
-    }
-  });
-};
-
 $nextButton.addEventListener("click", () => onCarouselButtonClick("next"));
 $prevButton.addEventListener("click", () => onCarouselButtonClick("prev"));
 setTestimonial(testimonials[0]);
 createControlDots();
+
+const dots = document.querySelectorAll(".dot");
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => onDotClick(index))
+})

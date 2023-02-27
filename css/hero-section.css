@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  gap: 3rem;
 }
 
 .hero__section h1 {
@@ -11,7 +12,6 @@
   font-size: 3rem;
   font-weight: 700;
   line-height: 2.5rem;
-  margin-top: 1rem;
 }
 
 .hero__section p {
@@ -30,10 +30,14 @@
   padding: 0.8em 2.8em;
   border-radius: 2rem;
   border: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 #consultBtn:hover {
-  cursor: pointer;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.2),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  transform: scale(1.02);
 }
 
 @media screen and (min-width: 1000px) {

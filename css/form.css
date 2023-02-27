@@ -13,7 +13,7 @@
 
 .form__content input {
   height: 30px;
-  width: 300PX;
+  width: 300px;
   border: 1px solid black;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -29,17 +29,20 @@
   padding: 1rem;
   border: 1px solid black;
   border-radius: 0.5rem;
-
 }
 
 #sendBtn {
   margin-top: 2.4rem;
   padding: 10px 40px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 #sendBtn:hover {
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  transform: scale(1.03);
+  background-color: var(--secondary-200);
+  color: var(--primary--background);
 }
 
 @media screen and (min-width: 1000px) {
